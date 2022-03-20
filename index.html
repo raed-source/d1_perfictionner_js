@@ -7,17 +7,19 @@
     <title>d1perfectionnerJs</title>
   </head>
   <body>
-    <form action="">
-      <select name="" id="note">
-        <option value="do">do</option>
-        <option value="re">re</option>
-        <option value="mi">mi</option>
-        <option value="fa">fa</option>
-        <option value="sol">sol</option>
-        <option value="la">la</option>
-        <option value="si">si</option>
-      </select>
-    </form>
+    <div id="main">
+      <form action="">
+        <select name="" id="note">
+          <option value="do">do</option>
+          <option value="re">re</option>
+          <option value="mi">mi</option>
+          <option value="fa">fa</option>
+          <option value="sol">sol</option>
+          <option value="la">la</option>
+          <option value="si">si</option>
+        </select>
+      </form>
+    </div>
     <script>
       a = document.getElementById("note");
 
@@ -29,12 +31,10 @@
         option = document.createElement("option");
         option.id = amNotes[i];
         option.innerText = amNotes[i];
-
         select.appendChild(option);
       }
-      window.appendChild(select);
+      document.getElementById("main").appendChild(select);
     </script>
-
     <script src="script.js"></script>
   </body>
 </html>
