@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>d1perfectionnerJs</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <form action="">
+      <select name="" id="note">
+        <option value="do">do</option>
+        <option value="re">re</option>
+        <option value="mi">mi</option>
+        <option value="fa">fa</option>
+        <option value="sol">sol</option>
+        <option value="la">la</option>
+        <option value="si">si</option>
+      </select>
+    </form>
+    <script>
+      a = document.getElementById("note");
+
+      let amNotes = ["c", "d", "e", "f", "g", "a", "b"];
+
+      var select = document.createElement("select");
+
+      for (i = 0; i < amNotes.length; i++) {
+        option = document.createElement("option");
+        option.id = amNotes[i];
+        option.innerText = amNotes[i];
+
+        select.appendChild(option);
+      }
+      window.appendChild(select);
+    </script>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
