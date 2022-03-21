@@ -4,37 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>d1perfectionnerJs</title>
   </head>
+
   <body>
-    <div id="main">
-      <form action="">
-        <select name="" id="note">
-          <option value="do">do</option>
-          <option value="re">re</option>
-          <option value="mi">mi</option>
-          <option value="fa">fa</option>
-          <option value="sol">sol</option>
-          <option value="la">la</option>
-          <option value="si">si</option>
-        </select>
-      </form>
-    </div>
-    <script>
-      a = document.getElementById("note");
+      <div id="main">
 
-      let amNotes = ["c", "d", "e", "f", "g", "a", "b"];
+      </div>
+    <!-- <form>
+      <label for="note">Les notes clasiques</label>
+      <select id="note"></select>
+    </form> -->
 
-      var select = document.createElement("select");
-
-      for (i = 0; i < amNotes.length; i++) {
-        option = document.createElement("option");
-        option.id = amNotes[i];
-        option.innerText = amNotes[i];
-        select.appendChild(option);
-      }
-      document.getElementById("main").appendChild(select);
-    </script>
     <script src="script.js"></script>
   </body>
 </html>
